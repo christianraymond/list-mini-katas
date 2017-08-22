@@ -1,10 +1,10 @@
 module.exports = function(list){
 
-  var firstList = list[0];
-  var secondList = list[1];
+    var swaPfirst = list[0];
+    var swaPlast = list[list.length-1];
 
-  list[0] = list[1];
-  list[1] = list[0];
+    list[0] = swaPlast;
+    list[list.length -1] = swaPfirst;
 
-    return [];
+     return list;
 }
